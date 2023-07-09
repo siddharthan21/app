@@ -1,6 +1,6 @@
 <?php 
 
-    include 'libs/load,php';
+    include 'libs/load.php';
   $username=$_POST["email-add"];
   $password=$_POST["pass"];
 // echo $username  ;
