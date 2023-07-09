@@ -78,6 +78,7 @@ body {
 </header>  
 <main>
   <?php load_templete('_login');?>
+  
  <?php //load_templete('body');?>
 </main>
 <?php // load_templete('footer');
