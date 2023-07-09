@@ -10,14 +10,9 @@ include 'libs/load.php'
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Album example · Bootstrap v5.0</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-
-    
-
     <!-- Bootstrap core CSS -->
 <link href="/app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -26,18 +21,14 @@ include 'libs/load.php'
         -moz-user-select: none;
         user-select: none;
       }
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
     </style>
-
-    
   </head>
   <body>
-    
 <header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
@@ -59,20 +50,12 @@ include 'libs/load.php'
   </div>
  <?php load_templete('header') ?>
 </header>
-
 <main>
-
   <?php load_templete('calltoaction');?>
-
  <?php load_templete('body');?>
 </main>
-
 <?php load_templete('footer');
 ?>
-
-
     <script src="/app/assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
   </body>
 </html>
