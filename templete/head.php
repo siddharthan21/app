@@ -8,5 +8,6 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
     <!-- Bootstrap core CSS -->
 <link href="/app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  </head>
+<link  href="css/<?=basename($_SERVER['PHP_SELF'],'.php').".css"?>"  rel="stylesheet" > 
+
+</head>
