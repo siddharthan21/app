@@ -1,27 +1,18 @@
-<?php 
-include ' libs/load.php';
-$username = $_POST['email'];
-$password = $_POST['pass'];
-
-$result = valid_login($username, $password);
-if($result) {
-    load_templete('index');
-    ?>
- 
-<?php
-}
-else{
-
-    ?> 
-
-
-<main class="form-signin w-100 m-auto">
-  <form method="post" action="login.php" >
+<main class="form-siginup w-100 m-auto">
+  <form method="post" action="test.php" >
     <img class="mb-4" onblur=""  src="/app/assets/login.jpg" alt="" width="90
     " height="90
     ">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
+    <div class="form-floating">
+      <input name="username"  type="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Username</label>
+    </div>
+    <div class="form-floating">
+      <input name="phone"  type="phone" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Phone</label>
+    </div>
     <div class="form-floating">
       <input name="email"  type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
@@ -38,7 +29,5 @@ else{
       </label> 
     </div>
     <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-
   </form>
-</main>
-<?php } ?>
+</main> 

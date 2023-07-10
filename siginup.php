@@ -1,3 +1,4 @@
+
 <?php
 include 'libs/load.php'
 ?>
@@ -24,22 +25,31 @@ body {
   height: 100%;
 }
 
-.form-signin {
+.form-siginup {
   max-width: 330px;
   padding: 1rem;
 }
 
-.form-signin .form-floating:focus-within {
+.form-siginup .form-floating:focus-within {
   z-index: 2;
 }
-
-.form-signin input[type="email"] {
+.form-siginup input[type="Username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-siginup input[type="Phone"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-siginup input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.form-signin input[type="password"] {
+.form-siginup input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -53,7 +63,7 @@ body {
  <?php load_templete('header') ?>
 </header>  
 <main>
-  <?php load_templete('_login');?>
+  <?php load_templete('_siginup');?>
   
  <?php //load_templete('body');?>
 </main>
