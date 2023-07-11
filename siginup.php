@@ -10,7 +10,7 @@ include 'libs/load.php'
   <body>
 <header>
 
- <?php load_templete('header') ?>
+ <?php load_templete('header') ?> 
 </header>  
 <main>
   <?php load_templete('_siginup');?>

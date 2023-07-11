@@ -30,14 +30,14 @@ if ($conn->connect_error) {
 
 $sql = "INSERT INTO authen (username, password, email, phoneno, blocked,active)
 VALUES ('$username', '$password' , '$email' ,'$phone', '0', '1')";
-if ($conn->query($sql) === TRUE) {
- $result = true;
+$error = false;
+if ($conn->query($sql) == TRUE) {
+    $error=false;
 } else {
-    $result = false;
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    $error= $conn->error;
 }
 
 $conn->close();
-return $result;
+return $error;
 }
 ?>
